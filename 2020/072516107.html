@@ -309,7 +309,7 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/2.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/20.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -443,7 +443,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-05-21
+                    2020-07-25
                 </div>
                 
 
@@ -452,7 +452,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    70
+                    575
                 </div>
                 
 
@@ -474,7 +474,19 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>你活得不快乐的原因大概是，你总是间歇性踌躇满志，持续性混吃等死，既无法忍受目前的状态，又没能力改变这一切，可以像只猪一样懒，却无法像只猪一样懒得心安理得。</p>
+                <h2 id="并发编程优点："><a href="#并发编程优点：" class="headerlink" title="并发编程优点："></a>并发编程优点：</h2><p>充分利用多核CPU的计算能力：通过并发编程的形式可以将多核CPU的计算能力发挥到极致，性能得到提升</p>
+<p>方便进行业务拆分，提升系统并发能力和性能：在特殊的业务场景下，先天的就适合于并发编程。现在的系统动不动就要求百万级甚至千万级的并发量，而多线程并发编程正是开发高并发系统的基础，利用好多线程机制可以大大提高系统整体的并发能力以及性能。面对复杂业务模型，并行程序会比串行程序更适应业务需求，而并发编程更能吻合这种业务拆分 。</p>
+<h2 id="并发编程有什么缺点"><a href="#并发编程有什么缺点" class="headerlink" title="并发编程有什么缺点"></a>并发编程有什么缺点</h2><p>并发编程的目的就是为了能提高程序的执行效率，提高程序运行速度，但是并发编程并不总是能提高程序运行速度的，而且并发编程可能会遇到很多问题，比如<strong>：内存泄漏、上下文切换、线程安全、死锁</strong>等问题。</p>
+<h2 id="并发编程三要素是什么？在-Java-程序中怎么保证多线程的运行安全？应用场景？"><a href="#并发编程三要素是什么？在-Java-程序中怎么保证多线程的运行安全？应用场景？" class="headerlink" title="并发编程三要素是什么？在 Java 程序中怎么保证多线程的运行安全？应用场景？"></a>并发编程三要素是什么？在 Java 程序中怎么保证多线程的运行安全？应用场景？</h2><h3 id="并发编程三要素（线程的安全性问题体现在）："><a href="#并发编程三要素（线程的安全性问题体现在）：" class="headerlink" title="并发编程三要素（线程的安全性问题体现在）："></a>并发编程三要素（线程的安全性问题体现在）：</h3><p>原子性：原子，即一个不可再被分割的颗粒。原子性指的是一个或多个操作要么全部执行成功要么全部执行失败。</p>
+<p>可见性：一个线程对共享变量的修改,另一个线程能够立刻看到。</p>
+<p>有序性：程序执行的顺序按照代码的先后顺序执行。</p>
+<h3 id="出现线程安全问题的原因："><a href="#出现线程安全问题的原因：" class="headerlink" title="出现线程安全问题的原因："></a>出现线程安全问题的原因：</h3><p>线程切换带来的原子性问题</p>
+<p>缓存导致的可见性问题</p>
+<p>编译优化带来的有序性问题</p>
+<h3 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h3><p>JDK Atomic开头的原子类、synchronized、LOCK，可以解决原子性问题<br>synchronized、volatile、LOCK，可以解决可见性问题<br>Happens-Before 规则可以解决有序性问题</p>
+<h3 id="应用场景"><a href="#应用场景" class="headerlink" title="应用场景"></a>应用场景</h3><p>使用多线程实现文件下载  买票</p>
+<p> 后台任务：如定时向大量(100W以上)的用户发送邮件  定时任务</p>
+<p> 异步处理：记录日志 </p>
 
             </div>
             <hr/>
@@ -500,7 +512,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://zstmax.github.io/2020/052116107.html">https://zstmax.github.io/2020/052116107.html</a>
+                    <a href="https://zstmax.github.io/2020/072516107.html">https://zstmax.github.io/2020/072516107.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -706,7 +718,7 @@
         repo: '',
         owner: '',
         admin: null,
-        id: '2020-05-21T17-57-05',
+        id: '2020-07-25T15-42-33',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -730,7 +742,7 @@
 <script src="https://cdn.jsdelivr.net/gh/zstmax/zstmax.github.io/libs/gitment/gitment.js"></script>
 <script>
 var gitment = new Gitment({
-    id: 'Thu May 21 2020 17:57:05 GMT+0800',
+    id: 'Sat Jul 25 2020 15:42:33 GMT+0800',
     owner: '',
     repo: '',
     oauth: {
@@ -755,8 +767,8 @@ gitment.render('gitment-content');
 
 <script type="text/javascript">
     disqus_config = function () {
-        this.page.url = 'https://zstmax.github.io/2020/052116107.html';
-        this.page.identifier = '/2020/052116107.html';
+        this.page.url = 'https://zstmax.github.io/2020/072516107.html';
+        this.page.identifier = '/2020/072516107.html';
         this.page.title = 'Hello World';
     };
     let disqus_shortname = '';
@@ -783,9 +795,10 @@ gitment.render('gitment-content');
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2020/072516107.html">
                     <div class="card-image">
@@ -803,9 +816,9 @@ gitment.render('gitment-content');
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-07-25
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-07-25
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -814,6 +827,7 @@ gitment.render('gitment-content');
                         </span>
                     </div>
                 </div>
+
                 
             </div>
         </div>
@@ -824,22 +838,19 @@ gitment.render('gitment-content');
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/052127842.html">
+                <a href="/2020/052116107.html">
                     <div class="card-image">
                         
-                        <img src="/medias/banner/0.jpg" class="responsive-img" alt="快速搭建个人博客">
+                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="Hello World">
                         
-                        <span class="card-title">快速搭建个人博客</span>
+                        <span class="card-title">Hello World</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            前言为什么希望你们都有个人网站呢，好处真的太多了，说句最实在的，你的个人网站也可以在你面试公司的时候加分，何乐而不为。
-网站搭建视频教程地址：B站视频地址1.nodejs，Git环境搭建：
-nodejs搭建教程:
+                            你活得不快乐的原因大概是，你总是间歇性踌躇满志，持续性混吃等死，既无法忍受目前的状态，又没能力改变这一切，可以像只猪一样懒，却无法像只猪一样懒得心安理得。
 
-注意了，像Git这种服务
                         
                     </div>
                     <div class="publish-info">
@@ -849,7 +860,7 @@ nodejs搭建教程:
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
-                            寒光君
+                            Zhang Sheng Tao
                             
                         </span>
                     </div>
